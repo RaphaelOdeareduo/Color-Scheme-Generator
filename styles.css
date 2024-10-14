@@ -9,12 +9,22 @@ html {
 }
 
 body {
+    font-family: "Inter", sans-serif;
+    background-color: #1C1C1C;
     min-height: 100vh;
 }
 
 img {
     display: block;
     width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 a {
@@ -30,3 +40,70 @@ h1, h2, h3, p {
     margin-top: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.app {
+    min-height: 90vh;
+}
+
+.header, .footer {
+    background-color: #fff;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    gap: 1rem;
+}
+
+input[type="color"] {
+    border: none;
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+select, .btn__get-color {
+    font-size: 1.6rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+select {
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+select option {
+    padding: 1rem;
+}
+
+.btn__get-color {
+    background-color: transparent;
+    padding: 1rem 1.6rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btn__get-color:hover, select:hover {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn__get-color:active {
+    transform: translate(0, 2px);
+}
+
+.color-block {
+    flex: 1;
+    height: 80vh;
+}
+
+.color-value {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
