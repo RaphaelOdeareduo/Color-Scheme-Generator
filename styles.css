@@ -31,7 +31,7 @@ a {
     text-decoration: none;
 }
 
-a, button {
+a, input, button {
     font-family: inherit;
     display: inline-block;
 }
@@ -61,6 +61,8 @@ h1, h2, h3, p {
 
 input[type="color"] {
     border: none;
+    background-color: transparent;
+    color: #000;
     width: 5rem;
     height: 4rem;
     cursor: pointer;
@@ -84,6 +86,7 @@ select option {
 
 .btn__get-color {
     background-color: transparent;
+    color: #000;
     padding: 1rem 1.6rem;
     transition: all 0.2s;
     cursor: pointer;
@@ -99,7 +102,7 @@ select option {
 
 .color-block {
     flex: 1;
-    height: 80vh;
+    height: 70vh;
 }
 
 .color-value {
